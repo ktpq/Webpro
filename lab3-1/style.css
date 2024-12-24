@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mitr;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    'id id id'
+    'front fname lname'
+    'address kwang khet'
+    'province post button';
+    gap: 20px;
+}
+
+select{
+    padding: 10px 15px;
+}
+
+h3{
+    color: white;
+}
+
+.myForm{
+    width: 1000px;
+    height: 600px;
+    padding: 2rem;
+    margin: 30px;
+    background-image: linear-gradient(0deg, rgba(34, 40, 49, 1) 0%, rgba(27, 32, 39, 1) 48%, rgba(13, 15, 18, 1) 100%);
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.49);
+    border-radius: 30px;
+}
+
+.input-text{
+    width: 95%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.topic{
+    color: white;
+}
+
+.id{
+    grid-area: id;
+}
+
+.front{
+    grid-area: front;
+}
+
+.fname{
+    grid-area: fname;
+}
+
+.lname{
+    grid-area: lname;
+}
+
+.address{
+    grid-area: address;
+}
+
+.kwang{
+    grid-area: kwang;
+}
+
+.khet{
+    grid-area: khet;
+}
+
+.province{
+    grid-area: province;
+}
+
+.post{
+    grid-area: post;
+}
+
+.button{
+    margin-top: 50px;
+    height: 45%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(110, 247, 110);
+    color: white;
+}
+
+.button:hover{
+    background-color: rgb(56, 235, 56);
+    transition: 1s ease;
+}
