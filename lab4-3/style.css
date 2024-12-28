@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mitr;
+}
+
+
+
+section{
+    width: 60%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    padding: 7px 1rem;
+    background-color: rgb(33, 240, 33);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+
+input{
+    padding: 7px 1rem;
+    font-size: 1.2rem;
+}
+
+select{
+    padding: 7px 1rem;
+    font-size: 1.2rem;
+}
+
+table{
+    border: 1px solid rgb(233, 232, 232);
+    border-collapse: collapse;
+    width: 85%;
+    margin-top: 1rem;
+}
+
+th{
+    border: 1px solid rgb(233, 232, 232);
+    padding: 7px 1rem;
+    background-color: rgba(26,188,156,255);
+    color: white;
+}
+
+td{
+    border: 1px solid rgb(233, 232, 232);
+    padding: 7px 1rem;
+}
+
+.header-text{
+    font-size: 45px;
+}
+
+.text-30{
+    font-size: 30px;
+}
+
+.table-container{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

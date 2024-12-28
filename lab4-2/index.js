@@ -1,11 +1,10 @@
-const button = document.querySelector('.btn');
-button.addEventListener('click', changeLang);
-
 let check = 0; // 0 = thai , 1 = eng
 
 const thaiList = ['เลือกประเทศ', 'ไทย', 'เวียดนาม', 'ลาว', 'มาเลเซีย', 'สิงคโปร์', 'ฟิลิปปินส์', 'เมียนมาร์', 'กัมพูชา', 'บรูไน']
 const engList = ['select a country', 'Thai', 'Vietnam', 'Lao', 'Malaysia', 'Singapore', 'Philippines', 'Myanmar', 'Cambodia', 'Brunai'];
 
+const button = document.querySelector('.btn');
+button.addEventListener('click', changeLang);
 function changeLang(){
     let nameTag = document.querySelector('.name-tag');
     let surnameTag = document.querySelector('.surname-tag');
@@ -23,7 +22,7 @@ function changeLang(){
             opt.innerHTML = `${item}`;
             countryList.append(opt);
         })
-
+        
         check = 1;
     } else {
         nameTag.innerHTML = 'ชื่อ :';
