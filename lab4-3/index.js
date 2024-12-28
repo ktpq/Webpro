@@ -24,7 +24,7 @@ function newList(){
     const categoryTag = document.querySelector('.category');
     const category = categoryTag.options[categoryTag.selectedIndex].innerHTML;
     
-    if (detail.length !== 0 &&  money.length !== 0 && date.length !== 0 && category.length !== 0){
+    if (detail.length !== 0 &&  money.length !== 0 && date.length !== 0 && category.length !== 0){  // อันนี้ผมดักเคสเพื่อบังคับให้กรอกทุกช่องถึงจะทำงานนะครับ
         const dateCol = document.createElement('td')
         dateCol.innerHTML = `${date}`;
 

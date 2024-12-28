@@ -23,6 +23,11 @@ button{
     font-size: 1.2rem;
 }
 
+button:hover{
+    background-color: rgb(245, 108, 108);
+    transition: 1s ease;
+}
+
 
 input{
     padding: 7px 1rem;
