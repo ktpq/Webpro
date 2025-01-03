@@ -1,0 +1,41 @@
+*{
+    font-family: Mitr;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 700px;
+    gap: 10px;
+}
+
+.card{
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.card-content{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
