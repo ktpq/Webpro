@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Vanilla Pudding",
+    "price": 50,
+    "description": "พุดดิ้งวานิลลาเนื้อเนียนนุ่ม หอมกลิ่นวานิลลาแท้",
+    "ingredients": "นม, น้ำตาล, วานิลลา, เจลาติน"
+  },
+  {
+    "id": 2,
+    "name": "Chocolate Pudding",
+    "price": 60,
+    "description": "พุดดิ้งช็อกโกแลตเข้มข้น ละลายในปากทุกคำ",
+    "ingredients": "นม, น้ำตาล, โกโก้, เจลาติน"
+  },
+  {
+    "id": 3,
+    "name": "Matcha Pudding",
+    "price": 65,
+    "description": "พุดดิ้งชาเขียวมัทฉะที่หอมเข้มข้น เต็มรสชาติชาแท้",
+    "ingredients": "นม, น้ำตาล, มัทฉะ, เจลาติน"
+  },
+  {
+    "id": 4,
+    "name": "Caramel Custard Pudding",
+    "price": 70,
+    "description": "พุดดิ้งคัสตาร์ดราดซอสคาราเมลหวานหอม นุ่มละมุนทุกคำ",
+    "ingredients": "นม, น้ำตาล, ไข่, คาราเมล, เจลาติน"
+  },
+  {
+    "id": 5,
+    "name": "Strawberry Pudding",
+    "price": 65,
+    "description": "พุดดิ้งสตรอว์เบอร์รี่สด หวานอมเปรี้ยวพร้อมซอสผลไม้สด",
+    "ingredients": "นม, น้ำตาล, สตรอว์เบอร์รี่, เจลาติน"
+  },
+  {
+    "id": 6,
+    "name": "Coconut Pudding",
+    "price": 55,
+    "description": "พุดดิ้งกะทิเนื้อเนียน หวานละมุน หอมกลิ่นมะพร้าวสด",
+    "ingredients": "นม, น้ำตาล, กะทิ, เจลาติน"
+  },
+  {
+    "id": 7,
+    "name": "Mango Pudding",
+    "price": 70,
+    "description": "พุดดิ้งมะม่วงเนื้อเนียน หวานหอมจากมะม่วงสด",
+    "ingredients": "นม, น้ำตาล, มะม่วง, เจลาติน"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Classic American Breakfast",
+    "price": 150,
+    "description": "อาหารเช้าสไตล์อเมริกัน พร้อมไข่ดาว เบคอน และขนมปังปิ้ง",
+    "ingredients": "ไข่, เบคอน, ขนมปัง, เนย"
+  },
+  {
+    "id": 2,
+    "name": "Pancakes with Maple Syrup",
+    "price": 120,
+    "description": "แพนเค้กเนื้อนุ่ม เสิร์ฟพร้อมเมเปิลไซรัปและเนยสด",
+    "ingredients": "แป้ง, นม, ไข่, เมเปิลไซรัป, เนย"
+  },
+  {
+    "id": 3,
+    "name": "Avocado Toast",
+    "price": 130,
+    "description": "ขนมปังปิ้งหน้าอะโวคาโดบด โรยด้วยพริกป่นและมะนาว",
+    "ingredients": "ขนมปัง, อะโวคาโด, พริกป่น, มะนาว"
+  },
+  {
+    "id": 4,
+    "name": "Omelette with Veggies",
+    "price": 110,
+    "description": "ไข่เจียวสไตล์ฝรั่งเศส ใส่ผักสดและชีสรสกลมกล่อม",
+    "ingredients": "ไข่, ผักสด, ชีส"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Orange Juice",
+    "type": "Cold",
+    "price": 50,
+    "description": "น้ำส้มสดคั้น 100% ที่มีรสชาติหวานและเปรี้ยวสดชื่น เหมาะสำหรับทุกช่วงเวลา",
+    "ingredients": "น้ำส้มสด"
+  },
+  {
+    "id": 2,
+    "name": "Mango Smoothie",
+    "type": "Cold",
+    "price": 80,
+    "description": "สมูทตี้มะม่วงเนื้อเนียนนุ่ม หวานหอม รสชาติสดชื่นเหมาะกับวันร้อนๆ",
+    "ingredients": "มะม่วง, โยเกิร์ต, น้ำแข็ง"
+  },
+  {
+    "id": 3,
+    "name": "Watermelon Juice",
+    "type": "Cold",
+    "price": 60,
+    "description": "น้ำแตงโมสดคั้นที่หวานชื่นใจ สดชื่นมากๆ สำหรับคลายร้อน",
+    "ingredients": "แตงโม"
+  },
+  {
+    "id": 4,
+    "name": "Pineapple Juice",
+    "type": "Cold",
+    "price": 55,
+    "description": "น้ำสับปะรดคั้นสดที่มีรสชาติหวานอมเปรี้ยว สดชื่นและเต็มไปด้วยวิตามิน",
+    "ingredients": "สับปะรด"
+  },
+  {
+    "id": 5,
+    "name": "Lemonade",
+    "type": "Cold",
+    "price": 45,
+    "description": "น้ำมะนาวสดผสมกับน้ำตาล เพิ่มความเปรี้ยวหวานสดชื่นในทุกการดื่ม",
+    "ingredients": "มะนาว, น้ำตาล"
+  },
+  {
+    "id": 6,
+    "name": "Mixed Fruit Juice",
+    "type": "Cold",
+    "price": 70,
+    "description": "น้ำผลไม้รวมจากผลไม้สดหลากหลายชนิด ผสมกันอย่างลงตัว เติมความสดชื่นให้กับคุณ",
+    "ingredients": "ส้ม, แตงโม, มะม่วง, สับปะรด"
+  }
+]

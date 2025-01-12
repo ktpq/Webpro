@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Ham and Cheese Sandwich",
+    "price": 70,
+    "description": "แซนวิชแฮมและชีสสุดคลาสสิก อบร้อนหอมกรุ่น",
+    "ingredients": "ขนมปัง, แฮม, ชีส, เนย"
+  },
+  {
+    "id": 2,
+    "name": "Egg Salad Sandwich",
+    "price": 65,
+    "description": "แซนวิชสลัดไข่ เนื้อนุ่ม รสชาติกลมกล่อม",
+    "ingredients": "ขนมปัง, ไข่, มายองเนส, ผักสด"
+  },
+  {
+    "id": 3,
+    "name": "Tuna Sandwich",
+    "price": 75,
+    "description": "แซนวิชทูน่าเข้มข้น เติมเต็มด้วยผักสด",
+    "ingredients": "ขนมปัง, ทูน่า, มายองเนส, ผักสด"
+  },
+  {
+    "id": 4,
+    "name": "Chicken Club Sandwich",
+    "price": 85,
+    "description": "แซนวิชไก่คลับ พร้อมเบคอนและผักสด รสชาติเข้มข้น",
+    "ingredients": "ขนมปัง, ไก่, เบคอน, ผักสด, มายองเนส"
+  },
+  {
+    "id": 5,
+    "name": "BLT Sandwich",
+    "price": 80,
+    "description": "แซนวิชเบคอน ผักกาดหอม และมะเขือเทศ หอมกรอบ",
+    "ingredients": "ขนมปัง, เบคอน, ผักกาดหอม, มะเขือเทศ"
+  },
+  {
+    "id": 6,
+    "name": "Grilled Cheese Sandwich",
+    "price": 70,
+    "description": "แซนวิชชีสย่าง กรอบนอกนุ่มใน อร่อยลงตัว",
+    "ingredients": "ขนมปัง, ชีส, เนย"
+  }
+]

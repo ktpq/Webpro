@@ -1,0 +1,70 @@
+*{
+    font-family: Mitr;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(180deg, rgba(83, 75, 64, 1) 0%, rgba(55, 49, 42, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 97px;
+    height: 7%;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+}
+
+button{
+    padding: 1rem 2rem;
+    background-color: #8ba08a;
+    border: 5px solid #675D50;
+    border-radius: 50px;
+    font-size: 25px;
+    color: white;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover{
+    background-color: #675D50;
+    transition: 0.3s;
+    transform: scale(0.95);
+    
+}
+
+section{
+    width: 60%;
+}
+
+.row{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.row2 {
+    margin-top: -60px;
+    padding: 0; /* ลบ padding ด้านใน */
+}
+
+.row3{
+    padding: 1rem 0;
+}
+
+.koffee{
+    font-size: 13rem;
+    /* border: 1px solid green; */
+    color: #F3DEBA;
+}
+
+.caption {
+    font-size: 25px;
+    color: white;
+}

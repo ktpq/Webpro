@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Butter Croissant",
+    "price": 50,
+    "description": "ครัวซองต์เนยสดหอมกรุ่น กรอบนอกนุ่มใน",
+    "ingredients": "แป้ง, เนย"
+  },
+  {
+    "id": 2,
+    "name": "Almond Croissant",
+    "price": 70,
+    "description": "ครัวซองต์ไส้อัลมอนด์ ราดน้ำตาลไอซิ่งและโรยด้วยอัลมอนด์อบ",
+    "ingredients": "แป้ง, เนย, อัลมอนด์, น้ำตาลไอซิ่ง"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate Croissant",
+    "price": 65,
+    "description": "ครัวซองต์ช็อกโกแลต หอมหวานเข้มข้นจากช็อกโกแลตแท้",
+    "ingredients": "แป้ง, เนย, ช็อกโกแลต"
+  },
+  {
+    "id": 4,
+    "name": "Ham and Cheese Croissant",
+    "price": 75,
+    "description": "ครัวซองต์ไส้แฮมและชีส อบร้อนหอมกรุ่นและรสชาติกลมกล่อม",
+    "ingredients": "แป้ง, เนย, แฮม, ชีส"
+  },
+  {
+    "id": 5,
+    "name": "Matcha Croissant",
+    "price": 80,
+    "description": "ครัวซองต์ไส้มัทฉะที่เข้มข้น หอมละมุนในทุกคำ",
+    "ingredients": "แป้ง, เนย, ผงมัทฉะ"
+  },
+  {
+    "id": 6,
+    "name": "Salted Caramel Croissant",
+    "price": 85,
+    "description": "ครัวซองต์ราดซอสคาราเมลเค็ม หอมหวานมันลงตัว",
+    "ingredients": "แป้ง, เนย, คาราเมล, เกลือ"
+  },
+  {
+    "id": 7,
+    "name": "Strawberry Cream Croissant",
+    "price": 90,
+    "description": "ครัวซองต์ไส้ครีมสตรอว์เบอร์รี่สด หวานอมเปรี้ยวกำลังดี",
+    "ingredients": "แป้ง, เนย, ครีม, สตรอว์เบอร์รี่"
+  }
+]
