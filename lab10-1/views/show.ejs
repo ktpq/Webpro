@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="show.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        <% data.forEach((item)=>{ %>
+        <tr>
+            <td class="id"><%=item.id%></td>
+            <td class="firstname"><%=item.first_name%></td>
+            <td class="lastname"><%=item.last_name%></td>
+            <td class="username"><%=item.username%></td>
+            <td class="email"><%=item.email%></td>
+            <td class="detail"> <a href="/detail?id=<%=item.id%>">Detail</a></td>
+        </tr>
+        <% }); %>
+    </table>
+    <!-- <% data.forEach((item)=>{ %>
+    
+        <%=item.id%>  <%=item.first_name%>  <%=item.last_name%>  <%=item.username%>  <%=item.email%><br>
+    
+    <% }); %> -->
+    
+</body>
+</html>

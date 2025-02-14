@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <div class="box">
+        <h1> User Detail </h1>
+        <% data.forEach((item)=>{ %>
+            <div>
+                <label for="">ID: </label><p><%=item.id%></p>
+            </div>
+            <div>
+                <label for="">First Name: </label><p><%=item.first_name%></p>
+            </div>
+            <div>
+                <label for="">Last Name: </label><p><%=item.last_name%></p>
+            </div>
+            <div>
+                <label for="">Username: </label><p><%=item.username%></p>
+            </div>
+            <div>
+                <label for="">Email: </label><p> <%=item.email%></p>
+            </div>
+            <div class="aa"><a href="/">Back to User List</a></div>
+        <% }); %>
+    </div>
+    
+</body>
+</html>

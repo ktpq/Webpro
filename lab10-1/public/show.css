@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mitr;
+}
+
+table, tr ,td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 70%;
+    margin: auto;
+}
+
+tr,td, th{
+    padding: 10px;
+}
+
+a{
+    border: 1px solid black;
+    padding: 0 0.7rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(61, 60, 60);
+    transition: 0.5s;
+}
+
+
+.id{
+    text-align: center;
+}
+
