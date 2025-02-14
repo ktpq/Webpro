@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="show.css">
+</head>
+<body>
+    <h1> ⭐ Questions ⭐ </h1>
+    <div class="grid">
+        <% data.forEach((item) => { %>
+            <section>
+                <h2> <%= item.QID %>.  <%= item.Stem %></h2>
+                <div>
+                    <input type="radio" name="<%= item.QID %>"><label for=""><%= item.Alt_A %></label>
+                </div>
+                <div>
+                    <input type="radio" name="<%= item.QID %>"><label for=""><%= item.Alt_B %></label>
+                </div>
+                <div>
+                    <input type="radio" name="<%= item.QID %>"><label for=""><%= item.Alt_C %></label>
+                </div>
+                <div>
+                    <input type="radio" name="<%= item.QID %>"><label for=""><%= item.Alt_D %></label>
+                </div>
+            </section>
+        <% }) %>
+        <!-- <section>
+            <h2> 1. What is the full form of sql ?</h2>
+            <div>
+                <input type="radio" name="1"><label for="">ans1</label>
+            </div>
+            <div>
+                <input type="radio" name="1"><label for="">ans1</label>
+            </div>
+            <div>
+                <input type="radio" name="1"><label for="">ans1</label>
+            </div>
+        </section> -->
+    </div>
+    
+    
+    
+    
+</body>
+</html>
