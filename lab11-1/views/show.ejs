@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="grid">
+        <% data.forEach((item)=>{ %>
+        <div class="grid-item">
+                <div>
+                    <img src="http://10.0.15.21:8000/<%=item.flag%>"" alt="" width="300">
+                    <h1><%=item.name%><h1/>
+                    <h2> Capital: <%=item.capital%><h2/>
+                    <h2>Region: <%=item.region%><h2/>
+                    <h2>Population: <%=item.population%><h2/>
+                    <h2>Area: <%=item.area%><h2/>
+                    <h2>CIOC: <%=item.cioc%><h2/>
+                </div>
+        </div>
+        <% }); %>   
+    </div> 
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .grid{
+            width: 100vw;
+            /* border: 1px solid red; */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: auto;
+            gap: 25px;
+        }
+
+        .grid-item{
+            /* border: 1px solid black; */
+            padding: 20px 20px;
+            box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 1000px){
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media screen and (max-width: 450px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

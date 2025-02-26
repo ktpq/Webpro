@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Mitr&family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <a href="/clear" style="text-decoration: none;"><h1 style="text-align: center; color: red; margin-bottom: 2rem;"> *** คลิกเพื่อเคลียฐานข้อมูล ! ***</h1></a>
+        <section>
+            <h1></h1>
+            <h1> Todos List </h1>
+            <a href="/form"> Add Todo </a>
+        </section>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Deadline</th>
+                <th>Completed</th>
+            </tr>
+            <% data.forEach((item)=>{ %>
+            <tr>
+                <td> <%=item.ID%></td>
+                <td> <%=item.Title%></td>
+                <td><%=item.Deadline %> </td>
+                <% if (item.Complete === "false") { %>
+                    <td><input type="checkbox" class="status"></td>
+                <% } else { %>
+                    <td><input type="checkbox" checked class="status"></td>
+                <% } %>
+                
+                
+            </tr>
+            <% }); %>
+        </table>
+        
+        
+    </div>
+    
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Mitr;
+        }
+
+        section{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* padding: 2rem; */
+            margin-bottom: 1.5rem;
+            a{
+                padding: 10px 10px;
+                background-color: rgb(45, 206, 168);
+                color: white;
+                text-decoration: none;
+                border: 2px solid black;
+            }
+            h1{
+                font-size: 2rem;
+            }
+         }
+         table{
+            margin: auto;
+            border: 1px solid green;
+            width: 100%;
+         }
+
+        table, th,tr,td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: left;
+            padding: 0.5rem 0.5rem;
+         }
+
+         
+
+         .container{
+            /* border: 1px solid black; */
+            width: 40%;
+            margin: 3rem auto;
+            padding: 2rem;
+            box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+         }
+         td{
+            a{
+                border: 1px solid red;
+                height: fit-content;
+            }
+         }
+    </style>
+</body>
+</html>
