@@ -26,7 +26,7 @@
             </tr>
             <% data.forEach((item)=>{ %>
             <tr>
-                <td> <%=item.ID%></td>
+                <td class="id"> <%=item.ID%></td>
                 <td> <%=item.Title%></td>
                 <td><%=item.Deadline %> </td>
                 <% if (item.Complete === "false") { %>
@@ -97,5 +97,44 @@
             }
          }
     </style>
+
+    <script>
+        const allCheckbox = document.querySelectorAll('.status');
+        
+        allCheckbox.forEach(checkbox => {
+            checkbox.addEventListener('change', getId)
+           
+        });
+
+        function getId(event) {
+            const child = event.target;
+            const parent = child.parentElement.parentElement;
+            const id = parent.querySelector('.id').innerHTML;
+            const isChecked = child.checked;
+
+            console.log(id)
+            console.log(isChecked)
+
+            fetch('/updateStatus', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    id: id,
+                    complete: isChecked
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Server Response:', data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+    });
+            
+        }
+
+    </script>
 </body>
 </html>

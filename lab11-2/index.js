@@ -68,28 +68,53 @@ app.post('/addtodo', (req,res) =>{
 })
 
 app.get('/clear', (req, res) => {
-    const queryDelete = `DELETE FROM todo;`;
-    const queryReset = `DELETE FROM SQLITE_SEQUENCE WHERE name='todo';`;
+  const dropTableQuery = `DROP TABLE IF EXISTS todo;`; // ลบตารางเดิม
+  const createTableQuery = `
+      CREATE TABLE todo (
+          ID INTEGER PRIMARY KEY AUTOINCREMENT,
+          Title text NOT NULL,
+          Description text,
+          Deadline text,
+          Complete text DEFAULT "false"
+      );
+  `;
 
-    db.serialize(() => {
-        db.run(queryDelete, (err) => {
-            if (err) {
-                console.log("Error deleting data:", err.message);
-                return res.status(500).send("Error deleting data");
-            }
+  db.serialize(() => {
+      db.run(dropTableQuery, (err) => {
+          if (err) {
+              console.log("Error dropping table:", err.message);
+              return res.status(500).send("Error dropping table");
+          }
+          console.log("Todo table dropped!");
 
-            db.run(queryReset, (err) => {
-                if (err) {
-                    console.log("Error resetting ID:", err.message);
-                    return res.status(500).send("Error resetting ID");
-                }
-
-                console.log("Todo list cleared and ID reset!");
-                res.redirect('/');
-            });
-        });
-    });
+          db.run(createTableQuery, (err) => {
+              if (err) {
+                  console.log("Error creating table:", err.message);
+                  return res.status(500).send("Error creating table");
+              }
+              console.log("Todo table recreated!");
+              res.redirect('/');
+          });
+      });
+  });
 });
+
+app.post('/updateStatus', (req, res) => {
+  const { id, complete } = req.body; // รับข้อมูลที่ส่งมา
+  console.log(id, complete)
+
+  // ทำงานกับข้อมูล เช่น อัปเดตฐานข้อมูล
+  // const query = `UPDATE todo SET Complete = ${complete} WHERE ID = ${id};`;
+  db.run(query, [complete ? "true" : "false", id], (err) => {
+      if (err) {
+          console.log(err.message);
+          return res.status(500).json({ message: "Error updating status" });
+      }
+      res.json({ message: "Status updated successfully!" });
+  });
+});
+
+
 
 app.listen(port, () => {
   console.log(`Starting node.js at port ${port}`);
