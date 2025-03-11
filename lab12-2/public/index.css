@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Mitr;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(34, 40, 49, 1) 0%, rgba(72, 82, 97, 1) 100%);
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: rgb(247, 250, 79);
+}
+
+section{
+    width: 33%;
+    padding: 2rem;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(49, 54, 63);
+}
+
+label{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(118, 171, 174);
+}
+
+input, textarea{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+a{
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 0.3rem;
+}
+
+a:hover{
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.save{
+    background-color: rgb(33, 206, 134);
+}
+
+.save:hover{
+    background-color: rgb(19, 117, 76);
+}
+
+.show{
+    background-color: rgb(70, 33, 206);
+}
+
+.show:hover{
+    background-color: rgb(38, 17, 114);
+}
+.clear{
+    background-color: rgb(206, 33, 33);
+}
+
+.clear:hover{
+    background-color: rgb(141, 23, 23);
+}
+div{
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:1200px){
+    section{
+        width: 80%;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <section>
+        <h1> Employee Information </h1>
+
+        <% rows.forEach(row=> { %>
+            <label for="" style="display: block;"> Employee ID: </label>
+            <input type="text" placeholder="Enter employee id" name="employee-id" class="employee-id"
+                value="<%= row.CustomerId %>">
+
+            <label for="" style="display: block;"> First Name: </label>
+            <input type="text" placeholder="Enter firstname" name="firstname" class="firstname"
+                value="<%= row.FirstName %>">
+
+            <label for="" style="display: block;"> Last Name: </label>
+            <input type="text" placeholder="Enter your lastname" name="lastname" class="lastname"
+                value="<%= row.LastName %>">
+
+            <label for="" style="display: block;"> Address: </label>
+            <textarea name="address" class="address" id=""
+                placeholder="Enter your address"><%= row.Address %></textarea>
+
+            <label for="" style="display: block;"> Email: </label>
+            <input type="text" placeholder="Enter your Email" name="email" class="email" value="<%= row.Email %>">
+
+            <label for="" style="display: block;"> Phone: </label>
+            <input type="text" placeholder="Enter your Phone" name="phone" class="phone" value="<%= row.Phone %>">
+            <% }) %>
+
+
+                <div>
+                    <a href="" class="save">Save data</a>
+                    <a href="" class="show">Show data</a>
+                    <a href="" class="clear">Clear data</a>
+                </div>
+
+    </section>
+
+    <script>
+        const saveBtn = document.querySelector('.save');
+        const showBtn = document.querySelector('.show');
+        const clearBtn = document.querySelector('.clear');
+
+        const employeeId = document.querySelector('.employee-id');
+        const firstName = document.querySelector('.firstname');
+        const lastName = document.querySelector('.lastname');
+        const address = document.querySelector('.address');
+        const email = document.querySelector('.email');
+        const phone = document.querySelector('.phone');
+
+        saveBtn.addEventListener('click', saveData);
+        showBtn.addEventListener('click', showData);
+        clearBtn.addEventListener('click', clearData)
+
+        function saveData(event) {
+            event.preventDefault();
+            const data = {
+                employeeId: employeeId.value,
+                firstName: firstName.value,
+                lastName: lastName.value,
+                address: address.value,
+                email: email.value,
+                phone: phone.value
+            };
+
+            fetch('/saveData', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Session Saved:', result);
+                    employeeId.value = ""
+                    firstName.value = ""
+                    lastName.value = ""
+                    address.value = ""
+                    email.value = ""
+                    phone.value = ""
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function showData(event) {
+            event.preventDefault()
+            fetch('/showData')
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Session Data:', result);
+                    const data = result.sessionData;
+                    employeeId.value = data.employeeId;
+                    firstName.value = data.firstName;
+                    lastName.value = data.lastName;
+                    address.value = data.address;
+                    email.value = data.email;
+                    phone.value = data.phone;
+
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function clearData(event) {
+            event.preventDefault();
+
+            fetch('/clearData')
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result.message);
+                    employeeId.value = ""
+                    firstName.value = ""
+                    lastName.value = ""
+                    address.value = ""
+                    email.value = ""
+                    phone.value = ""
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+
+</body>
+
+</html>

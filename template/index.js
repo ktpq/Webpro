@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3000;
+const sqlite3 = require('sqlite3').verbose();
 
 // เพิ่มใช้งานไฟล์
 const conn = require('./dbconn.js');
